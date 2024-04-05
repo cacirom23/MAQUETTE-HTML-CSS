@@ -1,0 +1,287 @@
+p[class='soustitre1']{
+    position: absolute;
+    color: white;
+    top: 75%;
+    left: 22%;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+p[class='text1']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 82%;
+    left: 22%;
+}
+
+p[class='soustitre2']{
+    position: absolute;
+    color: white;
+    top: 92%;
+    left: 22%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p[class='soustitre3']{
+    position: absolute;
+    color: white;
+    top: 112%;
+    left: 22%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p[class='text2']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 100%;
+    left: 22%;
+}
+
+p[class='text3']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 108%;
+    left: 22%;
+}
+
+p[class='text4']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 117%;
+    left: 22%;
+}
+
+p[class='text5']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 185%;
+    left: 22%;
+}
+
+p[class='text6']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 268%;
+    left: 22%;
+}
+
+p[class='text7']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 350%;
+    left: 22%;
+}
+
+p[class='text8']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 355%;
+    left: 22%;
+}
+
+p[class='text9']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 481%;
+    left: 22%;
+}
+
+p[class='text10']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 560%;
+    left: 22%;
+}
+
+p[class='text11']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 590%;
+    left: 22%;
+}
+
+p[class='text12']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 650%;
+    left: 22%;
+}
+
+
+p[class='text13']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 705%;
+    left: 22%;
+}
+
+
+.scroll {
+    display: block;
+    position: absolute;
+    top: 29%;
+    width: 21%;
+    transform: translateX(40%);
+    transition: transform 0.5s ease;
+    left: 45%;
+  }
+  
+  .container:hover .scroll {
+    transform: translateX(0);
+  }
+
+  
+p[class='info']{
+    position: absolute;
+    color: transparent;
+    top: 55%;
+    left: 66%;
+}
+
+
+
+.info:hover
+{
+    color: white;
+}
+
+.image-link3{
+    position: absolute;
+    color: white;
+    left: 22%;
+    top: 105%;
+}
+
+
+.image-link3:hover{
+    background-color: blue;
+    padding: 0.5px;
+}
+
+
+.imagee{
+    position: absolute;
+    left: 22%;
+    top: 125%;
+
+}
+
+.imageee{
+    position: absolute;
+    left: 22%;
+    top: 192%;
+}
+
+.imageeee{
+    position: absolute;
+    left: 22%;
+    top: 275%;
+}
+
+.imageeeee{
+    position: absolute;
+    left: 22%;
+    top: 360%;
+}
+
+.imageeeeee{
+    position: absolute;
+    left: 22%;
+    top: 415%;
+}
+
+.iimage{
+    position: absolute;
+    left: 22%;
+    top: 490%;
+}
+
+.iiimage{
+    position: absolute;
+    left: 22%;
+    top: 570%;
+}
+
+.iiiimage{
+    position: absolute;
+    left: 22%;
+    top: 598%;
+}
+
+.iiiiimage{
+    position: absolute;
+    left: 22%;
+    top: 660%;
+}
+
+.immage{
+    position: absolute;
+    left: 22%;
+    top: 690%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    h1{
+        font-size: 25px;
+    }
+
+    .scroll{
+        transition: none;
+        position: absolute;
+        left: 50%;
+        transform: none;
+        width: 35%;
+        top: 15;
+    }
+
+    img[src="image/John_the_Ripper_logo-2091365388.png"] {
+        position: absolute;
+    }
+    .special{
+        font-size: 20px; 
+    }
+
+    .info {
+        display: none;
+    }
+
+    img[src='image/content_bar.png'] {
+        right: 5%;
+        position: absolute;
+    }
+
+    .dropdown-content {
+        right: 0%;
+        position: absolute;
+    }
+
+    .info {
+        display: none;
+    }
+    
+    .scroll{
+        transition: none;
+        position: absolute;
+        left: 50%;
+        transform: none;
+        width: 35%;
+        top: 10%;
+    }
+
+}

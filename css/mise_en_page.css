@@ -1,0 +1,377 @@
+.container {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: 1fr; 
+}
+
+body {
+    background-color:rgba(0, 0, 0,1);
+    padding-left:230px;
+    padding-top: 25px;
+
+}
+
+.column1 {
+    width: auto;
+    position: fixed;
+
+}
+
+.column2 {
+    width: auto;
+}
+
+img[src="image/John_the_Ripper_logo-2091365388.png"] {
+    width: 5%;
+    margin-top: -50px;
+    position: fixed;
+
+}
+
+img[src='image/content_bar.png']{
+    margin-left: 560px;
+    margin-top: -270px;
+    position: fixed;
+}
+
+.image-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    color: white; 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    margin-left: 830px;
+    margin-top: 160px;
+}
+
+.image-link2 {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    color: white; 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    width: 30%;
+    margin-top: -110px;
+}
+
+.image-link img {
+    margin-right: 10px; 
+}
+
+
+.dropdown {
+    position: relative;
+
+
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: 1350px;
+    margin-top: -110px;
+
+
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.dropdown-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-content ul li {
+    margin-bottom: 5px;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+}
+
+.dropdown-content a:hover {
+   
+    background-color: red;
+    padding: 5%;
+    text-decoration: none;
+   
+   }
+
+.vertical-line {
+    height: 650px;
+    margin-top: 90px;
+    border-right: 1px white;
+    border-top: 1px white;
+    border-bottom: 1px white;
+    margin-top: -0px;
+}
+
+.vertical-line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 0.1px; 
+}
+
+p[class='home'] {
+    display: none;
+    color: white;
+    top: -2%;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+p[class='home1'] {
+    display: none;
+    color: white;
+    top: 9%;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+p[class='homee'] {
+    display: none;
+    color: white;
+    top: 22%;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+p[class='homeee'] {
+    display: none;
+    color: white;
+    top: 35%;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+p[class='homeeee'] {
+    display: none;
+    color: white;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    top: 47%;
+}
+
+
+.dot:hover + p[class='home'] {
+    display: block;
+}
+
+.dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: white;
+    display: inline-block;
+    margin-right: 10px;
+    top: 0%;
+}
+
+
+.dott{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%; 
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: white;
+    display: inline-block;
+    margin-right: 10px;
+    position: absolute;
+    top: 13%;
+}
+
+.dottt{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%; 
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: white;
+    display: inline-block;
+    margin-right: 10px;
+    position: absolute;
+    top: 26%;
+}
+
+.dotttt{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%; 
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: white;
+    display: inline-block;
+    margin-right: 10px;
+    position: absolute;
+    top: 39%;
+}
+
+.dottttt{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%; 
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: white;
+    display: inline-block;
+    margin-right: 10px;
+    position: absolute;
+    top: 49%;
+}
+
+
+
+
+#dot1 {
+    background-color: white;
+    
+}
+
+#dot2 {
+    background-color: white;
+}
+
+#dot3 {
+    background-color: white;
+}
+
+#dot4 {
+    background-color: white;
+}
+
+#home1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+#home2 {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#home3 {
+    margin-left: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home4 {
+    margin-left: 40px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.dot:hover + #home1,
+.dott:hover + #home2,
+.dottt:hover + #home3,
+.dotttt:hover + #home4,
+.dottttt:hover + #home5 {
+    display: block;
+}
+
+h1 {
+    color: #fdfeff;
+    font-size: 45px;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 25%;
+    left: 38%;
+    white-space: nowrap;
+}
+
+.link-below-h1 {
+    display: block;
+    position: absolute;
+    top: calc(50% + 50px); 
+    left: 28%;
+    top: 55%;
+
+    transform: translateX(-50%);
+    color: #ffffff; 
+    text-decoration: none; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px; 
+}
+
+.link-below-h1:hover {
+
+    color: white;
+   
+    background-color: red;
+    padding: 0.5%;
+    text-decoration: none;
+   
+   }
+
+
+
+.horizontal-line {
+    position: absolute;
+    width: 62%; 
+    border: 1px solid white; 
+    border-right: 1px rgb(10, 10, 10);
+    border-top: 1px rgb(12, 12, 12);
+    border-left: 1px rgb(15, 15, 15);
+    right: 18%;
+    top: 70%;
+
+}
+
+
+@media screen and (max-width: 1280px) {
+
+    .vertical-line {
+        position: fixed;
+        right: 95%;
+        top: 30%;
+        height: 950px;
+    }
+    .image-link2 {
+        position: absolute;
+        right: 50%;
+        transition: none;
+        transform: none;
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 360px) {
+
+    .vertical-line {
+        position: fixed;
+        right: 95%;
+    }
+
+
+}

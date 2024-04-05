@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/mise_en_page.css">
+    <link rel="stylesheet" type="text/css" href="css/outils.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John The Ripper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>  
+        <nav class="image-nav">
+            <div class="dropdown">
+                <a href="#" class="image-link" id="toggleOverlay">        
+                    <img src="image/content_bar.png" alt="John the Ripper Logo">
+                </a>
+                <div class="dropdown-content">
+                    <ul>
+                        <li class="john"><a href="index.html">John The Ripper</a></li>
+                        <li class="propos"><a href="a_propos_de.html">A propos de</a></li>
+                        <li class="exemple"><a href="command_line_usage.html">CLI exemple</a></li>
+                        <li class="gui"><a href="gui.html">GUI exemple</a></li>
+                        <li class="Tools"><a href="outils.html">Outils</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <a href="index.html" class="image-link2" id="toggleOverlayy">
+                <img src="image/John_the_Ripper_logo-2091365388.png" alt="Menu">
+            </a>
+        </nav>      
+    </header>
+    <div class="container">
+        <div class="column1">
+            <hr class="vertical-line">
+            <div class="vertical-line" id="verticalLine">
+                <a href="index.html" class="dot" id="dot1"></a>
+                <p class="home" id="home1">Home</p>
+                    
+                <a href="a_propos_de.html" class="dott" id="dot2"></a>
+                <p class="home1" id="home2">À propos</p>
+                
+                <a href="command_line_usage.html" class="dottt" id="dot3"></a>
+                <p class="homee" id="home3">CLI exemple</p>
+                
+                <a href="gui.html" class="dotttt" id="dot4"></a>
+                <p class="homeee" id="home4">GUI exemple</p>
+                    
+                <a href="outils.html" class="dottttt" id="dot5"></a>
+                <p class="homeeee" id="home5">Outils</p>
+                
+            </div>
+        </div>
+        <h1>Utilitaires utiles pour <br>le craquage de mots<br> de passe avancés</h1>
+        <a href="a_propos_de.html" class="link-below-h1">Decouvre John</a>
+        <img class="scroll" src="image/john-logo.svg" alt="">
+        <p class="info">Plongée dans les outils de la <br>même équipe que John The Ripper</p>
+        <hr class="horizontal-line">
+        <p class="soustitre1">La suite de John The Ripper</p>
+        <p class="soustitre2">Liste des utilitaires</p>
+        <p class="soustitre3"></p>
+        <p class="text1">Au-delà de John The Ripper lui-même, il existe d'autres utilitaires utiles de la même équipe, maintenus dans des dépôts distincts.</p>
+        <p class="text2">JohnTheRipper-utilitaire est un ensemble de petits utilitaires utiles pour le craquage de mots de passe avancés.<br>Ils sont tous regroupés dans plusieurs binaires autonomes.<br>Tous ces utilitaires sont conçus pour exécuter une seule fonction spécifique.<br>Comme ils fonctionnent tous avec STDIN et STDOUT, vous pouvez les regrouper en chaînes.</p>
+        <p class="text3">Chacun d'entre eux est décrit en détail dans les sections suivantes.</p>
+        <p class="soustitre3">cap2hccapx</p>
+        <p class="text4">Outil utilisé pour générer des fichiers .hccapx à partir de fichiers de capture réseau (.cap ou .pcap) afin de casser les authentifications WPA/WPA2. Les fichiers .hccapx sont utilisés comme entrée par le type de hachage -m 2500 = WPA/WPA2.<br>Les options supplémentaires vous permettent de spécifier un nom de réseau (ESSID) pour filtrer les réseaux indésirables et de donner à cap2hccapx un indice sur le nom d'un réseau (ESSID) et l'adresse MAC du point d'accès (BSSID) si aucune balise n'a été capturée.<br>Syntaxe :</p>
+        <p class="commande1">$ ./cap2hccapx.bin<br>usage: ./cap2hccapx.bin input.pcap output.hccapx [filter by essid] [additional network essid:bssid]</p>
+        <p class="soustitre5">cleanup-rules</p>
+        <p class="text5">Supprime de STDIN les règles qui ne sont pas compatibles avec une plate-forme donnée. <br> Syntaxe: </p>
+        <p class="commande2">usage: ./cleanup-rules.bin mode</p>
+        <p class="text6">où le mode est 1 = CPU, 2 = GPU. </p>
+        <p class="soustitre6">Combinateur</p>
+        <p class="text7">Syntax: </p>
+        <p class="commande3">$ ./combinator.bin<br>usage: ./combinator.bin file1 file2</p>
+        <p class="text8">Ce programme est une implémentation autonome de l'attaque des combinateurs.<br>Chaque mot du fichier 2 est ajouté à chaque mot du fichier 1, puis imprimé sur STDOUT.<br>Étant donné que le programme doit rembobiner les fichiers plusieurs fois, il ne peut pas fonctionner avec STDIN et nécessite des fichiers réels.<br>Une autre option consisterait à stocker tout le contenu des deux fichiers en mémoire. Toutefois, dans le cadre du cassage de hachage, nous<br> travaillons généralement avec des fichiers volumineux, ce qui implique que la taille des fichiers que nous utilisons a de l'importance.            </p>
+        <p class="soustitre7">combinator3</p>
+        <p class="text9">Comme combinator, mais accepte trois fichiers en entrée et produit la combinaison des trois listes en sortie.</p>
+        <p class="soustitre8">combinatorX</p>
+        <p class="text10">Un outil de combinatoire étendu qui peut combiner deux, trois, quatre éléments ou plus, avec des séparateurs personnalisés entre chaque élément<br>, et avec un support de session/restauration et d'autres drapeaux utiles.<br>Notez qu'au-delà de deux listes de mots sources, combinatorX ne peut pas utiliser le même fichier direct sur le disque pour plusieurs listes<br>. Ceci est dû à la façon dont les fichiers sont lus à partir du disque à un bas niveau. Une solution consiste à copier la liste dans un fichier séparé.</p>
+        <p class="soustitre9">combipow</p>
+        <p class="text11">Produit toutes les "combinaisons uniques" à partir d'une courte liste d'entrées.</p>
+        <img src="image/compibow.PNG" class="imager" alt="">
+        <p class="soustitre10">cpu_rules</p>
+        <p class="soustitre11">ct3_to_ntlm</p>
+        <p class="text12"> Syntaxe: </p>
+        <p class="commande4">usage: ./ct3_to_ntlm.bin 8-byte-ct3-in-hex 8-byte-salt-in-hex [24-byte-ESS-in-hex]</p>
+        <p class="text13">Il existe deux versions différentes de NetNTLMv1 - l'une avec ESS, l'autre sans.<br>Si vous n'avez pas de SSE :</p>
+        <p class="commande5">NETNTLM_bs_fmt_plug.c:  {"$NETNTLM$1122334455667788$B2B2220790F40C88BCFF347C652F67A7C4A70D3BEBD70233", "cory21"},</p>
+        <p class="text14">Vous pouvez l'utiliser comme suit :</p>
+        <p class="commande6">./ct3_to_ntlm.bin C4A70D3BEBD70233 1122334455667788<br>51ad</p>
+        <p class="text15">Si vous avez ESS :</p>
+        <p class="commande7">./ct3_to_ntlm.bin 7D01513435B36DCA 1122334455667788 <br>1FA1B9C4ED8E570200000000000000000000000000000000<br>34d5</p>
+        <p class="soustitre12">cutb</p>
+        <p class="text16">Ce programme est conçu pour découper une liste de mots (lue depuis STDIN) afin de l'utiliser dans une attaque Combinator.<br> Supposons que vous remarquiez que les mots de passe d'un fichier particulier ont tendance à avoir une longueur de remplissage <br>commune au début ou à la fin du texte en clair, ce programme découpera la longueur du préfixe ou du suffixe spécifique des mots <br>existants dans une liste et la transmettra à STDOUT.<br> Syntaxe: </p>
+        <p class="commande8">$ ./cutb.bin<br>usage: ./cutb.bin offset [length]  infile > outfile</p>
+        <p class="text17">Exemple de fichier de liste de mots :</p>
+        <p class="commande9">$ cat wordlist<br>apple1234<br>theman<br>fastcars</p>
+        <p class="text18">Exemple de décalage positif et de longueur fixe (4 premiers caractères)</p>
+        <p class="commande10">$ ./cutb.bin 0 4  wordlist<br>appl<br>them<br>fast</p>
+        <p class="text19"> Exemple : décalage positif, pas de longueur (renvoie les caractères restants de la chaîne) : </p>
+        <p class="commande11">$ ./cutb.bin 4  wordlist<br>e1234<br>an<br>cars</p>
+        <p class="text20">Exemple de décalage négatif (4 derniers caractères de la chaîne) : </p>
+        <p class="commande12">$ ./cutb.bin -4  wordlist<br>1234<br>esman<br>cars</p>
+        <p class="text21"> Exemple : décalage négatif, longueur fixe : </p>
+        <p class="commande13">$ ./cutb.bin -5 3  wordlist <br>e12<br>hem<br>tca</p>
+        <p class="soustitre13">deskey_to_ntlm</p>
+        <p class="text22"> Syntaxe: </p>
+        <p class="commande14">usage: ./deskey_to_ntlm.pl 8-byte-key-in-hex</p>
+        <p class="text23">En conclusion, cela fournit un ensemble d'utilitaires spécialisés pour le craquage de mots de passe, offrant une flexibilité<br> grâce à une conception modulaire et à la possibilité d'enchaîner les opérations. </p>
+        <div class="column2">
+        </div>
+    </div>
+
+</body>
+</html>

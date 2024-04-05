@@ -1,0 +1,143 @@
+.scroll{
+    display: block;
+    width: 30%;
+    height: auto;
+    transform: translateX(40%);
+    transition: transform 0.5s ease;
+    position: absolute;
+    top: 9%;
+    left: 35%;
+  }
+  
+.container:hover .scroll{
+    transform: translateX(0);
+    color: white;
+  }
+
+.container:hover .info:hover{
+    color: white;
+    opacity: 1;
+}
+
+p[class='info']{
+    position: absolute;
+    top: 55%;
+    left: 65%;
+    color: transparent;
+    background-size: cover;
+    transition: opacity 0.5s ease;
+}
+
+p[class='soustitre1']{
+    position: relative;
+    color: white;
+    top: 800%;
+    left: 30%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p[class='text1']{
+    position: relative;
+    color: white;
+    font-size: 15px;
+    left: 30%;
+    top: 205%;
+}
+
+p[class='soustitre2']{
+    position: relative;
+    color: white;
+    top: 800%;
+    left: 0%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p[class='soustitre3']{
+    position: relative;
+    color: white;
+    top: 850%;
+    left: 30%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p[class='soustitre4']{
+    position: relative;
+    color: white;
+    top: 870%;
+    left: 0%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p[class='text2']{
+    position: relative;
+    color: white;
+    font-size: 15px;
+    top: 205%;
+    left: 0%;
+}
+
+p[class='text3']{
+    position: relative;
+    color:white;
+    font-size: 15px;
+    top: 400%;
+    left: 30%;
+}
+
+p[class='text4']{
+    position: relative;
+    color:white;
+    font-size: 15px;
+    top: 400%;
+    left: 0%;
+}
+
+ul[class='sous-text']{
+    position: relative;
+    color: white;
+    font-size: 15px;
+    top: 120%;
+    left: 0%;
+}
+
+@media screen and (max-width: 1280px) {
+    
+    .soustitre3{
+        font-size: 16px;
+
+    }
+    h1 {
+        font-size: 25px; 
+    }
+
+    .info {
+        display: none;
+    }
+
+    img[src='image/content_bar.png'] {
+        right: 5%;
+        position: absolute;
+    }
+
+    .dropdown-content {
+        right: 0%;
+        position: absolute;
+    }
+
+    .info {
+        display: none;
+    }
+    
+    .scroll{
+        transition: none;
+        position: absolute;
+        left: 50%;
+        transform: none;
+        width: 35%;
+        top: 13%;
+    }
+}

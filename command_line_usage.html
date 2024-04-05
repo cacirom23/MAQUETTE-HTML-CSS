@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/mise_en_page.css">
+    <link rel="stylesheet" type="text/css" href="css/command_ligne_usage.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command line usage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>  
+        <nav class="image-nav">
+            <div class="dropdown">
+                <a href="#" class="image-link" id="toggleOverlay">        
+                    <img src="image/content_bar.png" alt="John the Ripper Logo">
+                </a>
+                <div class="dropdown-content">
+                    <ul>
+                        <li class="john"><a href="index.html">John The Ripper</a></li>
+                        <li class="propos"><a href="a_propos_de.html">A propos de</a></li>
+                        <li class="exemple"><a href="command_line_usage.html">CLI exemple</a></li>
+                        <li class="gui"><a href="gui.html">GUI exemple</a></li>
+                        <li class="Tools"><a href="outils.html">Outils</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <a href="index.html" class="image-link2" id="toggleOverlayy">
+                <img src="image/John_the_Ripper_logo-2091365388.png" alt="Menu">
+            </a>
+        </nav>      
+    </header>
+    <div class="container">
+        <div class="column1">
+            <hr class="vertical-line">
+            <div class="vertical-line" id="verticalLine">
+                <a href="index.html" class="dot" id="dot1"></a>
+                <p class="home" id="home1">Home</p>
+                    
+                <a href="a_propos_de.html" class="dott" id="dot2"></a>
+                <p class="home1" id="home2">À propos</p>
+                
+                <a href="command_line_usage.html" class="dottt" id="dot3"></a>
+                <p class="homee" id="home3">CLI exemple</p>
+                
+                <a href="gui.html" class="dotttt" id="dot4"></a>
+                <p class="homeee" id="home4">GUI exemple</p>
+                    
+                <a href="outils.html" class="dottttt" id="dot5"></a>
+                <p class="homeeee" id="home5">Outils</p>
+                
+            </div>
+        </div>
+        <h1>Comment craquer un mot de <br>passe PDF par force brute<br> en utilisant John the Ripper <br>dans Parrot OS ?</h1>
+        <a href="a_propos_de.html" class="link-below-h1">Decouvre John</a>
+        <img class="scroll" src="image/last-removebg-preview.png" alt="">
+        <p class="info">Apprenez à craquer un PDF protégé<br> par force brute en utilisant John The<br> Ripper, le craqueur de mot de <br>passe rapide de Parrot.</p>
+        <hr class="horizontal-line">
+        <p class="soustitre1">1. Construire les binaires de JohnTheRipper</p>
+        <p class="soustitre2">2. Générer un fichier de hachage PDF<br></p>
+        <p class="soustitre3">3. Brute Force avec John</p>
+        <p class="text1">Nous allons devoir travailler avec la version Jumbo de JohnTheRipper. Il s'agit d'une version "jumbo" de John the Ripper, améliorée par la communauté. Elle contient beaucoup de code, de<br> documentation et de données fournis par la communauté des utilisateurs. Il ne s'agit pas du code "officiel" de John the Ripper. Il est très facile d'ajouter du nouveau code à jumbo : les<br> exigences de qualité sont faibles. Cela signifie que vous obtiendrez beaucoup de fonctionnalités qui ne sont pas assez "matures" ou qui ne conviennent pas au JtR officiel, ce qui signifie <br>également que des bogues sont à prévoir dans ce code. Obtenez le code source de JohnTheRipper (la branche "bleeding-jumbo" (par défaut) est basée sur 1.8.0-Jumbo-1) depuis le dépôt sur<br> Github avec la commande suivante (ou téléchargez le zip avec le contenu et extrayez-le dans un répertoire quelconque) :</p>
+        <p class="commande"><br>git clone https://github.com/magnumripper/JohnTheRipper.git</p>
+        <p class="text2">Cela créera un répertoire nommé John dans le répertoire courant. Passez dans le répertoire de John avec la commande suivante :</p>
+        <p class="commande1">cd ./JohnTheRipper/src</p>
+        <p class="text3">Procédez au téléchargement des listes de paquets depuis les dépôts avec la commande suivante :</p>
+        <p class="commande2">sudo apt-get update</p>
+        <p class="text4">Et installez libssl :</p>
+        <p class="commande3">sudo apt-get install libssl-dev</p>
+        <p class="text5">La bibliothèque nécessite l'installation de libssl (openssl) dans votre système, donc si vous ne l'avez pas, la commande précédente fera<br> l'affaire pour remplir cette condition. Une fois le dépôt cloné, entrez dans le répertoire source qui contient le code source de JohnTheRipper :</p>
+        <p class="commande4">cd ./JohnTheRipper/src</p>
+        <p class="text6">Dans ce répertoire, nous allons procéder à la construction en suivant les instructions suivantes :</p>
+        <p class="commande5">./configure && make</p>
+        <p class="text7">Cette version de Jumbo a autoconf qui supporte la chaîne très commune, vous permettant de compiler les sources sur un système de type Unix.<br> Une fois le processus de compilation terminé, basculez dans le répertoire d'exécution à l'intérieur du répertoire JohnTheRipper :</p>
+        <p class="commande6">cd ..</p>
+        <p class="text8">A l'intérieur de ce répertoire vous trouverez (après la construction) tous les outils que la bibliothèque a à offrir (y compris john lui-même),<br> vous pouvez lister le répertoire à comparer.</p>
+        <p class="commande7">cd ./run</p>
+        <p class="commande8">ls</p>
+        <p class="text9">Vous trouverez tous les outils de JohnTheRipper dans ce répertoire :</p>
+        <img src="image/ls.png" alt="">
+        <p class="text10"><br><br><br>Maintenant que vous disposez des outils nécessaires, commençons par l'attaque par force brute.</p>
+        <p class="text11">JohnTheRipper, comme mentionné au début de l'article, n'est pas lié en soi aux PDF, mais aux mots de passe et à la sécurité. C'est pourquoi<br> vous devrez créer le fichier de hachage du PDF en utilisant l'outil pdf2john.pl (disponible dans le répertoire run après avoir compilé à partir<br> des sources). Cet outil vous permet d'obtenir le hash (Read meta information) du fichier à travers ce script perl, qui peut être extrait dans un<br> nouveau fichier avec la commande suivante :</p>
+        <p class="commande9">pdf2john.pl /root/Desktop/pdf_protected.pdf > /root/Desktop/pdf.hash</p>
+        <p class="text12">Cette commande créera un fichier .hash dans le répertoire défini. C'est ce fichier que nous utiliserons pour travailler avec l'outil JohnTheRipper :</p>
+        <img src="image/hashpdf.png" alt="">
+        <p class="text13"><br>Le fichier pdf.hash contient un texte du type :</p>
+        <p class="commande10">/root/Desktop/pdf_protected.pdf:$pdf$4*4*128*-4*1*16*d22933dd530666ced293ccf5f860214f*32*ab12d2e30eae3d43d69ac57efc2918c128bf4e5e4e758a4164004e56fffa0108</p>
+        <p class="text14">Maintenant que nous avons le fichier de hachage, nous pouvons procéder au brute force à l'aide de l'outil CLI de John.</p>
+        <p class="text15">Maintenant que nous avons le fichier .hash du PDF avec le mot de passe que nous voulons déverrouiller, il nous suffit de passer le fichier<br> en argument à l'outil CLI de JohnTheRipper (dans le répertoire d'exécution) :</p>
+        <p class="commande11">john pdf.hash</p>
+        <p class="text16">Ceci utilisera UTF-8 comme encodage d'entrée par défaut et commencera à deviner le mot de passe du fichier PDF en utilisant la liste<br> de mots par défaut de la bibliothèque. S'il est trouvé, il affichera le mot de passe et le chemin vers le PDF protégé :</p>
+        <img src="image/cracked.png" alt="">
+        <p class="text17">Si vous essayez d'exécuter la commande sur le même fichier après que le mot de passe a été deviné, vous verrez les messages suivants : "No<br> password hashes loaded", "No password hashes loaded", ou "No password hashes left to crack". Les mots de passe craqués seront imprimés<br> sur le terminal et enregistrés dans le fichier appelé $JOHN/john.pot. Le fichier $JOHN/john.pot est également utilisé<br>Si c'est le cas, vous pourrez voir à nouveau le mot de passe du même fichier en utilisant l'option --show :</p>
+        <p class="commande12">john --show /home/john/John/run/pdf.hash</p>
+        <p class="soustitre4">4. Utiliser une liste de mots personnalisée</p>
+        <p class="text18">Si vous ne souhaitez pas utiliser le fichier password.lst par défaut de JohnTheRipper, indiquez simplement le chemin vers le nouveau fichier<br> en utilisant l'argument --wordlist :</p>
+        <p class="commande13">john --wordlist=password.lst protected_pdf.hash</p>
+        <p class="text19">En guise de recommandation finale, l'outil permet de craquer un grand nombre de fichiers, il est donc conseillé de lire la <a href="https://github.com/openwall/john/tree/bleeding-jumbo/doc" class="doc">documentation de la<br> bibliothèque</a> Le reste de la documentation se trouve dans des fichiers séparés, listés ici dans l'ordre de lecture recommandé :</p>
+        
+        <ul class="sous-text1">
+            <li><p>INSTALL - Instructions d'installation</p></li>
+            <li><p>OPTIONS - options de la ligne de commande et utilitaires supplémentaires</p></li>
+            <li><p>EXEMPLES - exemples d'utilisation - fortement recommandé</p></li>
+            <li><p>MODES - Modes de craquage : ce qu'ils sont</p></li>
+            <li><p>FAQ - Questions fréquemment posées</p></li>
+            <li><p>BUGS - Liste des bogues connus</p></li>
+            <li><p>DYNAMIC - Comment utiliser le format dynamique dans le JtR</p></li>
+            <li><p>DYNAMIC COMPILER FORMATS - Liste des formats de hachage connus construits à l'aide du compilateur dynamique</p></li>
+            <li><p>DYNAMIC_SCRIPTING - comment construire/optimiser un format qui utilise la dynamique</p></li>
+            <li><p>README.bash-completion - Comment activer la complétion bash pour JtR</p></li>
+            <li><p>CONTACT (*) - comment contacter l'auteur ou obtenir de l'aide d'une autre manière</p></li>
+            <li><p>CONFIG (*) - comment personnaliser l'application</p></li>
+            <li><p>EXTERNAL (*) - définir un mode externe</p></li>
+            <li><p>RULES (*) - syntaxe des règles de la liste de mots</p></li>
+            <li><p>CHANGES (*) - Historique des modifications</p></li>
+            <li><p>CREDITS (*) - Crédits</p></li>
+            <li><p>LICENSE - droits d'auteur et conditions de licence</p></li>
+            <li><p>COPYING - GNU GPL version 2, comme référencé par LICENSE ci-dessus</p></li>
+            <li><p>(*) la plupart des utilisateurs peuvent ignorer ces éléments.</p></li>
+            <li><p>Joyeux hacking !</p></li>
+        </ul>
+        <div class="column2">
+        </div>
+    </div>
+
+</body>
+</html>

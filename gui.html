@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/mise_en_page.css">
+    <link rel="stylesheet" type="text/css" href="css/gui.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John The Ripper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>  
+        <nav class="image-nav">
+            <div class="dropdown">
+                <a href="#" class="image-link" id="toggleOverlay">        
+                    <img src="image/content_bar.png" alt="John the Ripper Logo">
+                </a>
+                <div class="dropdown-content">
+                    <ul>
+                        <li class="john"><a href="index.html">John The Ripper</a></li>
+                        <li class="propos"><a href="a_propos_de.html">A propos de</a></li>
+                        <li class="exemple"><a href="command_line_usage.html">CLI exemple</a></li>
+                        <li class="gui"><a href="gui.html">GUI exemple</a></li>
+                        <li class="Tools"><a href="outils.html">Outils</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <a href="index.html" class="image-link2" id="toggleOverlayy">
+                <img src="image/John_the_Ripper_logo-2091365388.png" alt="Menu">
+            </a>
+        </nav>      
+    </header>
+    <div class="container">
+        <div class="column1">
+            <hr class="vertical-line">
+            <div class="vertical-line" id="verticalLine">
+                <a href="index.html" class="dot" id="dot1"></a>
+                <p class="home" id="home1">Home</p>
+                    
+                <a href="a_propos_de.html" class="dott" id="dot2"></a>
+                <p class="home1" id="home2">À propos</p>
+                
+                <a href="command_line_usage.html" class="dottt" id="dot3"></a>
+                <p class="homee" id="home3">CLI exemple</p>
+                
+                <a href="gui.html" class="dotttt" id="dot4"></a>
+                <p class="homeee" id="home4">GUI exemple</p>
+                    
+                <a href="outils.html" class="dottttt" id="dot5"></a>
+                <p class="homeeee" id="home5">Outils</p>
+            </div>
+        </div>
+        <h1>Comment utiliser Johnny<br>- un logiciel GUI avancé de craquage<br>et de récupération de mots de passe<br>pour John the Ripper ?</h1>
+        <a href="a_propos_de.html" class="link-below-h1">Decouvre John</a>
+        <img class="scroll" src="image/johnny-removebg-preview.png" alt="">
+        <p class="info">Dans ce petit tutoriel<br> rapide, je montrerai<br> comment utiliser<br> Johnny, avec quelques<br> exemples.</p>
+        <hr class="horizontal-line">
+        <p class="soustitre1">Introduction:</p>
+        <p class="soustitre2"><br>Installation:</p>
+        <p class="soustitre3">Comment l'utiliser ?</p>
+        <p class="text1">Johnny est l'interface graphique Open Source multiplateforme pour le célèbre craqueur de mots de passe John the Ripper.L'objectif de Johnny est d'automatiser et de simplifier la routine de<br> craquage de mots de passe à l'aide de l'extrêmement polyvalent et robuste John the Ripper, ainsi que d'ajouter des fonctionnalités supplémentaires, comme l'amélioration du flux de travail<br> des hashs et des mots de passe, la gestion des attaques multiples et des sessions, la définition aisée de règles d'attaque complexes, le feedback visuel et les statistiques.</p>
+        <p class="text2">Pour Windows, il suffit de télécharger la version du programme qui convient à votre système d'exploitation et d'exécuter le programme d'installation.</p>
+        <a href="https://openwall.info/wiki/john/johnny#Binaries-22-CURRENT" class="image-link3">Manuel d'installation</a>
+        <p class="text3">Pour linux, vous devrez télécharger les sources depuis github. Les étapes se trouvent dans le lien précédent.</p>
+        <p class="text4">Il s'agit de la page d'accueil ou de la page principale dès que vous chargez Johnny pour la première fois :</p>
+        <img src="image/johnyy.png" alt="" class="imagee">
+        <p class="text5">Dans ce cas, j'inclurai le dictionnaire de mots de passe rockyou.txt</p>        <p class="text7"></p>
+        <img src="image/rockyou.png" class="imageee" alt="">
+        <p class="text6">Vous devrez également lui donner l'exécutable de base de John the Ripper</p>
+        <img src="image/ripper.png" class="imageeee" alt="">
+        <p class="text7">Reprenons l'exemple du pdf</p>
+        <p class="text8">Pour cet exemple, j'ai créé un fichier PDF crypté avec un mot de passes aléatoires.</p>
+        <img src="image/pdf.png" class="imageeeee" alt="">
+        <img src="image/pass.png" class="imageeeeee" alt="">
+        <p class="text9">Maintenant, revenons à Johnny. Cliquez sur Fichier - Ouvrir un autre format de fichier et choisissez pdf et remplissez les informations que vous souhaitez.</p>
+        <img src="image/pdff.png" class="iimage" alt="">
+        <p class="text10">Cette étape vous donnera un ensemble de hachages. Enregistrez-les dans un fichier .txt et passez aux étapes suivantes.</p>
+        <img src="image/hashh.png" class="iiimage" alt="">
+        <p class="text11">Il suffit de charger ces fichiers au format mot de passe dans johnny et de lancer une nouvelle attaque.<br>Et voici le mots de passe cracké avec succès :</p>
+        <img src="image/passwo.png" class="iiiimage" alt="">
+        <p class="text12">Vous pouvez également l'extraire dans un fichier séparé :</p>
+        <img src="image/export.png" class="iiiiimage" alt="">
+        <img src="image/exportt.png" class="immage" alt="">
+        <p class="text13">Et c'est tout. Un petit exemple, court et rapide. Il existe de nombreuses fonctionnalités et manières différentes de craquer ces mots de passe, méthodes et cryptages disponibles.<br> N'hésitez pas à les tester et à vous amuser.</p>
+        <div class="column2">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,465 @@
+.scroll {
+    display: block;
+    position: absolute;
+    top: 15%;
+    width: 28%;
+    transform: translateX(40%);
+    transition: transform 0.5s ease;
+    left: 48%;
+  }
+  
+  .container:hover .scroll {
+    transform: translateX(0);
+  }
+
+.info:hover{
+    color: white;
+}
+
+img[src='image/ls.png']{
+    position: absolute;
+    top: 310%;
+    left: 34%;
+}
+p[class='info']{
+    position: absolute;
+    color: transparent;
+    top: 55%;
+    left: 71%;
+}
+
+h1[class='special']{
+    font-size: 35px;
+    position: absolute;
+    top: 33%;
+    left: 37%;
+
+}
+
+p[class='soustitre1']{
+    position: absolute;
+    color: white;
+    top: 76%;
+    left: 23%;
+    font-size: 20px;
+
+}
+
+p[class='text1']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 83%;
+    left: 23%;
+}
+
+p[class='soustitre2']{
+    position: absolute;
+    color: white;
+    top: 365%;
+    left: 23%;
+    font-size: 20px;
+}
+
+p[class='soustitre3']{
+    position: absolute;
+    color: white;
+    top: 455%;
+    left: 23%;
+    font-size: 20px;
+
+}
+
+p[class='soustitre4']{
+    position: absolute;
+    color: white;
+    top: 555%;
+    left: 23%;
+    font-size: 20px;
+
+}
+
+p[class='text2']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 115%;
+    left: 23%;
+}
+
+p[class='text3']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 140%;
+    left: 23%;
+}
+
+p[class='text4']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 165%;
+    left: 23%;
+}
+
+p[class='text5']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 190%;
+    left: 23%;
+}
+
+p[class='text6']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 215%;
+    left: 23%;
+}
+
+p[class='text7']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 240%;
+    left: 23%;
+}
+
+p[class='text8']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 275%;
+    left: 23%;
+}
+
+p[class='text9']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 300%;
+    left: 23%;
+}
+
+p[class='text10']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 355%;
+    left: 23%;
+}
+
+p[class='text11']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 375%;
+    left: 23%;
+}
+
+p[class='text12']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 395%;
+    left: 23%;
+}
+
+p[class='text13']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 430%;
+    left: 23%;
+}
+
+p[class='text14']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 447%;
+    left: 23%;
+}
+
+p[class='text15']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 465%;
+    left: 23%;
+}
+
+p[class='text16']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 478%;
+    left: 23%;
+}
+
+p[class='text17']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 535%;
+    left: 23%;
+}
+
+p[class='text18']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 562%;
+    left: 23%;
+}
+
+p[class='text19']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 578%;
+    left: 23%;
+}
+
+ul[class='sous-text1']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 585%;
+    left: 23%;
+}
+
+
+p[class='commande']{
+    color: white;
+    position: absolute;
+    top: 105%;
+    left: 23%;
+    background-color: #111b27;
+    padding: 1%;
+    width: 42%;
+}
+
+p[class='commande1']{
+    color: white;
+    position: absolute;
+    top: 125%;
+    left: 23%;
+    background-color: #111b27;
+    padding: 1%;
+    width: 42%;
+}
+p[class='commande2']{
+    color: white;
+    position: absolute;
+    top: 150%;
+    left: 23%;
+    background-color: #111b27;
+    padding: 1%;
+    width: 42%;
+}
+p[class='commande3']{
+    color: white;
+    position: absolute;
+    top: 175%;
+    left: 23%;
+    background-color: #111b27;
+    padding: 1%;
+    width: 42%;
+}
+p[class='commande4']{
+    color: white;
+    position: absolute;
+    top: 200%;
+    left: 23%;
+    background-color: #111b27;
+    padding: 1%;
+    width: 42%;
+}
+
+p[class='commande5']{
+    color: white;
+    position: absolute;
+    top: 225%;
+    left: 23%;
+    background-color: #111b27;
+    padding: 1%;
+    width: 42%;
+    
+}
+p[class='commande6']{
+    color: white;
+    position: absolute;
+    top: 250%;
+    left: 23%;
+    background-color: #111b27;
+    padding: 1%;
+    width: 42%;
+    
+}
+p[class='commande7']{
+    color: white;
+    position: absolute;
+    top: 260%;
+    left: 23%;
+    background-color: #111b27;
+    padding: 1%;
+    width: 42%;
+    
+}
+p[class='commande8']{
+    color: white;
+    position: absolute;
+    top: 285%;
+    left: 23%;
+    background-color: #111b27;
+    padding: 1%;
+    width: 42%;
+    
+}
+
+p[class='commande9']{
+    color: white;
+    position: absolute;
+    top: 385%;
+    left: 23%;
+    background-color: #111b27;
+    padding: 1%;
+    width: 42%;
+    
+}
+
+p[class='commande10']{
+    color: white;
+    position: absolute;
+    top: 435%;
+    left: 23%;
+    background-color: #111b27;
+    padding: 1%;
+    width: 42%;
+    
+}
+
+p[class='commande11']{
+    color: white;
+    position: absolute;
+    top: 468%;
+    left: 23%;
+    background-color: #111b27;
+    padding: 1%;
+    width: 42%;
+    
+}
+
+p[class='commande11']{
+    color: white;
+    position: absolute;
+    top: 545%;
+    left: 23%;
+    background-color: #111b27;
+    padding: 1%;
+    width: 42%;
+    
+}
+
+p[class='commande12']{
+    color: white;
+    position: absolute;
+    top: 568%;
+    left: 23%;
+    background-color: #111b27;
+    padding: 1%;
+    width: 42%;
+    
+}
+img[src='image/hashpdf.png']{
+    position: absolute;
+    top: 405%;
+    left: 23%;
+    
+}
+
+img[src="image/cracked.png"]{
+    position: absolute;
+    top: 488%;
+    left: 23%;
+}
+
+img[src="image/ls.png"]{
+    position: absolute;
+    top: 310%;
+    left: 23%;
+}
+
+.doc{
+    color: white;
+}
+
+.doc:hover{
+    background-color: blue;
+    padding: 0.5px;
+    text-decoration: underline black;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    
+    h1{
+        font-size: 25px;
+    }
+    .scroll{
+        transition: none;
+        position: absolute;
+        left: 50%;
+        transform: none;
+        width: 35%;
+        top: 13%;
+    }
+
+    img[src="image/John_the_Ripper_logo-2091365388.png"] {
+        position: absolute;
+    }
+    .soustitre3{
+        font-size: 16px;
+
+    }
+    .special{
+        font-size: 20px; 
+    }
+
+    .info {
+        display: none;
+    }
+
+    img[src='image/content_bar.png'] {
+        right: 5%;
+        position: absolute;
+    }
+
+    .dropdown-content {
+        right: 0%;
+        position: absolute;
+    }
+
+    .info {
+        display: none;
+    }
+    
+    .scroll{
+        transition: none;
+        position: absolute;
+        left: 50%;
+        transform: none;
+        width: 35%;
+        top: 15%;
+      
+
+        
+    }
+    .text17{
+        display: none;
+    }
+       
+}
+

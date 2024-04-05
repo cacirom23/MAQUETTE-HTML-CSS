@@ -1,0 +1,131 @@
+p[class='soustitre1']{
+    position: absolute;
+    color: white;
+    top: 75%;
+    left: 24%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p[class='text1']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 80%;
+    left: 24%;
+}
+
+p[class='soustitre2']{
+    position: absolute;
+    color: white;
+    top: 75%;
+    left: 55%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p[class='text2']{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 82%;
+    left: 55%;
+}
+
+.info:hover
+{
+    color: white;
+}
+
+
+.scroll {
+    display: block;
+    position: absolute;
+    top: 34%;
+    width: 32%;
+    transform: translateX(40%);
+    transition: transform 0.5s ease;
+    left: 39%;
+  }
+  
+  .container:hover .scroll {
+    transform: translateX(0);
+  }
+
+  
+p[class='info']{
+    position: absolute;
+    color: rgb(24, 24, 15);
+    top: 55%;
+    left: 71%;
+}
+
+
+@media screen and (max-width: 1280px) {
+    
+    h1 {
+        top: 35%;
+        font-size: 15px; 
+    }
+
+    .info {
+        display: none;
+    }
+
+    img[src='image/content_bar.png'] {
+        right: 5%;
+    }
+
+    .dropdown-content {
+        right: 0%;
+        position: absolute;
+    }
+
+    .info {
+        display: none;
+    }
+
+
+    .scroll{
+        transition: none;
+        position: absolute;
+        left: 20%;
+        transform: none;
+        width: 35%;
+        top: 10%;
+    }
+    p[class='text1']{
+        position: absolute;
+        color: white;
+        font-size: 15px;
+        top: 90%;
+        left: 10%;
+    }
+
+    p[class='soustitre1']{
+        position: absolute;
+        color: white;
+        top: 75%;
+        left: 10%;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    p[class='soustitre2']{
+        position: absolute;
+        color: white;
+        top: 140%;
+        left: 10%;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    p[class='text2']{
+        position: absolute;
+        color: white;
+        font-size: 15px;
+        top: 170%;
+        left: 10%;
+    }
+
+
+}
